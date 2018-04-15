@@ -1,0 +1,23 @@
+url: localhost
+db: appdb
+user: userdb
+password: passworddb
+osUrl: http://localhost:3000/order?start=%d&end=%d
+updateRate: 30
+        
+server:
+  type: simple
+  applicationContextPath: /myapp
+  adminContextPath: /admin
+  connector:
+    type: http
+    port: 3000
+
+logging:
+  level: INFO
+  loggers:
+    io.dropwizard: INFO
+    br.ufal.ic: DEBUG
+    org.eclipse.jetty.servlets: INFO
+  appenders:
+    - type: console

@@ -1,0 +1,9 @@
+# Executando
+
+Para rodar na linha de comando:
+	
+~~~~
+java -classpath %classpath br.ufal.ic.teste.atividade_02.CibApp server config.yml
+~~~~
+
+Na IDE, você pode passar os seguintes argumentos para o programa (o que vai no String[] args da classe main): server config.yml
